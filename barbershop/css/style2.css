@@ -1,0 +1,428 @@
+* {
+  box-sizing: border-box;
+}
+
+/*----CONTACT REFLECTION ---*/
+
+section#showcase h1 {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  font-family: sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 6em;
+}
+section#showcase h1::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: bottom;
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+  line-height: 0.865em;
+  background: linear-gradient(0deg, #fff 0, transparent 80%);
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0.5;
+}
+
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5s;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+/* -------- GLOBAL ------------*/
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.dash {
+  color: #e50000;
+}
+
+/* -------- HEADER ------------*/
+
+header {
+  background: #313639;
+  color: #fff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #ccc 3px solid;
+  padding-bottom: 30px;
+}
+
+header a{
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header li {
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding {
+  float: left;
+}
+
+header #branding h1 {
+  margin: 0;
+  border-bottom: 2px solid #e50000;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+.under {
+  text-align: center;
+  font-size: 18px;
+}
+
+header .highlight {
+  /*color: #e50000;*/
+  font-weight: bold;
+  background-color: #e50000;
+  /*background: linear-gradient(to right, #e50000, #da5d5d, #fff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;*/
+  text-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+header .current a {
+   color: #e50000;
+   font-weight: bold;
+}
+
+header a:hover {
+  font-weight: bold;
+  /*text-decoration: underline;*/
+  font-size: 19px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #fff;
+  transition:border-bottom 0.2s, color 0.2s;
+  -webkit-transition:border-bottom 0.2s, color 0.2s;
+  -moz-transition:border-bottom 0.2s, color 0.2s;
+  -ms-transition:border-bottom 0.2s, color 0.2s;
+  -o-transition:border-bottom 0.2s, color 0.2s;
+}
+
+
+/* -------- SHOWCASE ------------*/
+
+#showcase {
+  min-height: 400px;
+  background: radial-gradient(#da5d5d, #e50000);
+  text-align: center;
+  color: #fff;
+}
+
+#showcase h1 {
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#showcase p {
+  font-size: 20px;
+}
+
+.phone {
+  color: #fff;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+#newsletter {
+  padding: 15px;
+  color: #fff;
+  background: #313639;
+  border-top: #ccc 3px solid;
+  margin-bottom: 75px;
+  border-bottom: #ccc 3px solid;
+}
+
+#newsletter div {
+  text-align: center;
+}
+
+/*------------------------------*/
+/*------CONTACT LOGOS ----------*/
+/*------------------------------*/
+
+.contact-logos {
+  position: relative;
+  height: 100px;
+  width: 100%;
+}
+
+.contact-logos ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.contact-logos ul li {
+  list-style: none;
+  margin: 0 40px;
+  padding-bottom: 70px;
+}
+
+.contact-logos ul li a .fab {
+  font-size: 50px;
+  color: #262626;
+  line-height: 80px;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+}
+
+.contact-logos ul li a {
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: #e50000;
+  text-align: center;
+  transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+  -webkit-transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+  -moz-transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+  -ms-transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+  -o-transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+  box-shadow: -20px 20px 10px rgba(0,0,0,.5);
+}
+
+.contact-logos ul li a::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  height: 100%;
+  width: 20px;
+  background: #bc0000;
+  transition: .5;
+  -webkit-transition: .5;
+  -moz-transition: .5;
+  -ms-transition: .5;
+  -o-transition: .5;
+  transform: rotate(0deg) skewY(-45deg);
+  -webkit-transform: rotate(0deg) skewY(-45deg);
+  -moz-transform: rotate(0deg) skewY(-45deg);
+  -ms-transform: rotate(0deg) skewY(-45deg);
+  -o-transform: rotate(0deg) skewY(-45deg);
+}
+
+.contact-logos ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: -10px;
+  height: 20px;
+  width: 100%;
+  background: #ff0000;
+  transition: .5;
+  -webkit-transition: .5;
+  -moz-transition: .5;
+  -ms-transition: .5;
+  -o-transition: .5;
+  transform: rotate(0deg) skewX(-45deg);
+  -webkit-transform: rotate(0deg) skewX(-45deg);
+  -moz-transform: rotate(0deg) skewX(-45deg);
+  -ms-transform: rotate(0deg) skewX(-45deg);
+  -o-transform: rotate(0deg) skewX(-45deg);
+}
+
+.contact-logos ul li a:hover {
+  transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+  -webkit-transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+  -moz-transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+  -ms-transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+  -o-transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+  box-shadow: -50px 50px 50px rgba(0,0,0,.5);
+}
+
+/*------------------------------*/
+/*---------FACEBOOK LOGO ----------*/
+/*------------------------------*/
+
+.contact-logos ul li:hover .fab {
+  color: #fff;
+}
+
+.contact-logos ul li:hover:nth-child(1) a {
+  background: #3b5999;
+}
+
+.contact-logos ul li:hover:nth-child(1) a:before {
+  background: #2e4a86;
+}
+
+.contact-logos ul li:hover:nth-child(1) a:after {
+  background: #4a69ad;
+}
+
+/*-----TWITTER LOGO ------*/
+
+.contact-logos ul li:hover:nth-child(2) a {
+  background: #55acee;
+}
+
+.contact-logos ul li:hover:nth-child(2) a:before {
+  background: #4184b7;
+}
+
+.contact-logos ul li:hover:nth-child(2) a:after {
+  background: #4d9fde;
+}
+
+/*-------INSTAGRAM LOGO -----------*/
+
+.contact-logos ul li:hover:nth-child(3) a {
+  background: #e4405f;
+}
+
+.contact-logos ul li:hover:nth-child(3) a:before {
+  background: #d02d4c;
+}
+
+.contact-logos ul li:hover:nth-child(3) a:after {
+  background: #f1395c;
+}
+
+/*------------------------------*/
+/* ----- MAP ------- */
+/*------------------------------*/
+
+.map {
+  color: #fff;
+  margin: 20px 0px;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#map {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ------- FOOTER ----------- */
+
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  color: #fff;
+  background-color: #e50000;
+  text-align: center;
+  border-top: 3px solid #ccc;
+}
+
+/*------------------------------*/
+/* ----- MEDIA QUERIES ------- */
+/*------------------------------*/
+
+@media(max-width: 768px) {
+  header #branding,
+  header nav,
+  header nav li {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  header {
+    padding-bottom: 20px;
+  }
+
+  #showcase h1 {
+    margin-top: 40px;
+  }
+}
+
+@media(max-width: 515px) {
+  #showcase div {
+    width: auto;
+    max-height: 50px;
+    height: 50%;
+    font-size: .68em;
+  }
+
+  #showcase div h1 {
+    text-align: center;
+    margin:auto;
+    vertical-align:middle;
+    margin-top: 110px;
+  }
+}
+
+@media(max-width: 490px) {
+  .contact-logos ul {
+    display: block;
+    top: 200px;
+  }
+
+  .map {
+    margin-top: 300px;
+    width: auto;
+  }
+}
+
+@media(max-width: 480px) {
+  header #branding,
+  header nav,
+  header nav li {
+    float: none;
+    text-align: center;
+  }
+
+  header nav li {
+    display: block;
+    padding-bottom: 8px;
+  }
+}
